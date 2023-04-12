@@ -10,6 +10,4 @@
 
 **Stagnoli, Lucas** 
 
-<tomas.mrc.09@gmail.com
-aure391@gmail.com
-lucasstagnoli20@gmail.com>
+>tomas.mrc.09@gmail.com, aure391@gmail.com, lucasstagnoli20@gmail.com
