@@ -1,9 +1,15 @@
 # Los-Palmas
 
-## Técnicas y Herramientas Modernas I
+## Técnicas y Herramientas Modernas I 2023
 
 ### Integrantes:
 
-**Garignani, Tomás** tomas.mrc.09@gmail.com
-**Santos, Andrés** aure391@gmail.com
-**Stagnoli, Lucas** lucasstagnoli20@gmail.com
+**Garignani, Tomás** 
+
+**Santos, Andrés** 
+
+**Stagnoli, Lucas** 
+
+<tomas.mrc.09@gmail.com
+aure391@gmail.com
+lucasstagnoli20@gmail.com>
