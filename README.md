@@ -1,6 +1,6 @@
 # Los-Palmas
 
-## Técnicas y Herramietnas Modernas I
+## Técnicas y Herramientas Modernas I
 
 ### Integrantes:
 
