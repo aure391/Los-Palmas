@@ -1,0 +1,139 @@
+---
+title: "Primeros pasos en R"
+author: "Los-Palmas"
+date: "2023-03-29"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+
+
+## Definición de variables numéricas
+
+
+para definir variables numericas basta con darle un nombre a la variable y poner la flecha de asignación seguida del valor numérico que queremos asignar. en la ventana superior derecha aparecerá la variable con su valor
+
+```{r}
+ca<-16
+ca
+
+```
+
+
+### VECTORES
+
+Los vectores son otra estructura de datos de R que a diferencia de las variables que vimos antes, alojan una colección de valores. Desde el punto de vista de objetos una variable simple es un vector que solo tiene un elemento.
+```{r}
+Ventas <- c (30,35,23,45,60,69,12,34,36,89,74,25)
+plot(Ventas)
+```
+
+
+Quisiera saber cuál es el nivel promedio de ventas anuales y el desvío estandar.
+
+```{r}
+mean (Ventas)
+sd (Ventas)
+```
+
+
+
+###DATOS SIMULADOS
+
+Queremos generar unos datos para meter en un simulador que representen a nuestra empresa. Vamos a generar 500 datos con el mismo promedio y desvío estándar.
+
+```{r}
+Ventas_simuladas<-rnorm(500,44.33333,23.49597)
+plot(Ventas_simuladas)
+```
+
+
+Qué probabilidad tengo de que las ventas sean menores a 30
+
+```{r}
+pnorm(30,44.33,23.49)
+```
+
+## VARIABLES DE TIPO LISTA
+Las variables de tipo lista son vectores pero que se generan con el comando "scan()".
+Como scan es un comando interactivo no podemos colocarlo dentro de un documento Rmarkdown. Sólo podemos ejecutar  en la ventana de consola el comando.
+
+    compras <-scan()
+
+
+##Comando length y seq
+length: funciona para evidenciar la longitud de datos con la que cuenta una variable definida anteriormente.
+seq: se utiliza para generar una secuencia de números con un valor inicial, un valor final y el rango entre valores que se van dando.
+Mediante estas funciones se puede generar una gráfica de un cierto valor sin necesidad de contar con dos datos de la siguiente manera:
+```{r}
+plot(seq(1,length(Ventas_simuladas),1),Ventas_simuladas)
+```
+
+## MÉTODOS ALTERNATIVOS DE GENERAR SECUENCIAS
+
+A los programadores les encanta usar los métodos de programación que llevan comandos como "for", "until", "while" ; pero estos métodos son caros computacionalmente hablando. 
+Como R trabaja con comando matricial podes hacerlo solo en una linea de comando.
+
+```{r}
+impuestos<-0
+impuestos[1] <- 0
+for (i in 2:24) {
+impuestos[i] <- impuestos[i-1]+2*i
+impuestos
+}
+impuestos
+```
+
+De la lista ventas_simuladas ¿Cuántos valores son superiores a 40?
+```{r}
+indice <- which(Ventas_simuladas > 40)
+indice
+```
+
+```{r}
+indice <-  which(Ventas_simuladas > 40)
+indice
+Ventas_simuladas[indice]
+```
+
+
+```{r}
+length(indice)
+sum(Ventas_simuladas[indice])
+
+```
+```{r}
+A <- 0 
+ A[1] <- 0 
+ A[2] <- 1
+ A[3] <- A[1]+A[2]
+ for (i in 3:31) {A[i] <- A[i-1]+A[i-2]}
+A
+```
+
