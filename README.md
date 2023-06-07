@@ -6,6 +6,8 @@
 
 **Garignani, Tomás** 
 
+**Russo, Santiago**
+
 **Santos, Andrés** 
 
 **Stagnoli, Lucas** 
