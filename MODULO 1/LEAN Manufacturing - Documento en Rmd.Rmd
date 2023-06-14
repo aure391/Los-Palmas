@@ -1,0 +1,80 @@
+---
+title: "Sistemas de produccion - Documento en Rmd"
+author: "Los-Palmas"
+date: "2023-06-14"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+
+
+---
+title: Lean Manufacturing
+output: pdf_document
+---
+
+# Introducción
+
+En este documento, exploraremos el concepto de Lean Manufacturing, una metodología de gestión y producción que se centra en la eliminación de desperdicios y la optimización de los procesos. Analizaremos los principios clave, las herramientas y las mejores prácticas aplicadas en la implementación del Lean Manufacturing en diversas industrias.
+
+<center>![IMAGEN LEAN](C:\FACULTAD\TyHM I y II\TyHM I\MODULO 1 - Producción de textos e hipertextos, CV\M1 20230614\Sistemas de producción - Documento en Rmd\LEAN 1.jfif)</center>
+
+
+## 1: Definición de Lean Manufacturing
+
+Lean Manufacturing, también conocido como Producción Ajustada, es un enfoque de gestión que busca maximizar el valor para el cliente minimizando el desperdicio. En esta página, definiremos qué es el Lean Manufacturing y los beneficios que puede aportar a las organizaciones.
+
+## 2: Los cinco principios del Lean Manufacturing
+
+Los cinco principios del Lean Manufacturing son fundamentales para comprender y aplicar esta metodología. Exploraremos cada uno de ellos, incluyendo:
+
+1. Identificar el valor desde la perspectiva del cliente.
+2. Mapear el flujo de valor para identificar los procesos y actividades que agregan valor y los que no.
+3. Crear flujo continuo mediante la eliminación de obstáculos y tiempos de espera.
+4. Establecer sistemas de producción pull (jalar) basados en la demanda del cliente.
+5. Buscar la mejora continua en busca de la perfección.
+
+### Herramientas del Lean Manufacturing: Kaizen
+
+Kaizen es una filosofía y una herramienta esencial del Lean Manufacturing. Exploraremos qué es Kaizen y cómo se implementa en los procesos de mejora continua, fomentando la participación de todos los miembros de la organización.
+
+### Herramientas del Lean Manufacturing: Just-in-Time (JIT)
+
+El Just-in-Time (JIT) es una herramienta del Lean Manufacturing que busca reducir al mínimo los inventarios y los tiempos de espera. Analizaremos cómo funciona el JIT, sus beneficios y los desafíos asociados con su implementación.
+
+### Herramientas del Lean Manufacturing: Kanban
+
+El Kanban es una herramienta visual que ayuda a controlar el flujo de trabajo y la producción en un sistema Lean. Discutiremos cómo se utiliza el Kanban para mejorar la eficiencia, la calidad y la comunicación en los procesos de producción.
+
+### Herramientas del Lean Manufacturing: 5S
+
+Las 5S son un conjunto de técnicas que buscan crear un entorno de trabajo organizado, limpio y seguro. Analizaremos cada uno de los pasos de las 5S (Clasificar, Ordenar, Limpiar, Estandarizar y Mantener) y cómo se aplican en la implementación del Lean Manufacturing.
+
+### Mejora continua y solución de problemas
+
+La mejora continua y la solución de problemas son componentes esenciales del Lean Manufacturing. Exploraremos herramientas como el Ciclo PDCA (Planificar, Hacer, Verificar, Actuar) y el A3, que ayudan a abordar los desafíos, analizar datos y tomar decisiones basadas en evidencia.
+
